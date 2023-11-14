@@ -20,8 +20,8 @@ pipeline:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
           platform:
-            os: Windows
-            arch: Amd64
+            os: Linux
+            arch: Arm64
           runtime:
             type: Cloud
             spec: {}
