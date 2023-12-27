@@ -18,10 +18,10 @@ pipeline:
                   identifier: Echo_Welcome_Message
                   spec:
                     shell: Sh
-                    command: echo "Welcome to Harness CI"
+                    command: echo "Welcome to Harness CI for AVO test"
           platform:
-            os: Linux
-            arch: Amd64
+            os: Windows
+            arch: Arm64
           runtime:
             type: Cloud
             spec: {}
