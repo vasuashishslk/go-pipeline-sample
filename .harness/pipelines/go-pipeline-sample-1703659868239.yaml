@@ -1,0 +1,33 @@
+pipeline:
+  name: Build go-pipeline-sample
+  identifier: Build_vasuashishslk_go_pipeline_sample_1703659893712
+  projectIdentifier: AvoCTTest
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Echo Welcome Message
+                  identifier: Echo_Welcome_Message
+                  spec:
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1700038246885
+        repoName: vasuashishslk/go-pipeline-sample
+        build: <+input>
