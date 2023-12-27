@@ -1,0 +1,14 @@
+inputSet:
+  pipeline:
+    identifier: Build_vasuashishslk_go_pipeline_sample_1703666085468
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
+  name: vasuiInputSet
+  identifier: vasuiInputSet
+  orgIdentifier: default
+  projectIdentifier: AvoCTTest
