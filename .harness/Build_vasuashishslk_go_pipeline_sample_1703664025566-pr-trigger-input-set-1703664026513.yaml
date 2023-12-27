@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_vasuashishslk_go_pipeline_sample_1703664025566-pr-trigger-input-set
+  identifier: Build_vasuashishslk_go_pipeline_sample_1703664025566prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_vasuashishslk_go_pipeline_sample_1703664025566
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
