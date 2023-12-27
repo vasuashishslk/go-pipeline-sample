@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_vasuashishslk_go_pipeline_sample_1703659893712-push-trigger-input-set
+  identifier: Build_vasuashishslk_go_pipeline_sample_1703659893712pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: AvoCTTest
+  pipeline:
+    identifier: Build_vasuashishslk_go_pipeline_sample_1703659893712
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
